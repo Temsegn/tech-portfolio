@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href=" /assets/css/white_mode.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- =====BOX ICONS===== -->
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <title>Portfolio website complete</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header class="header">
+      <nav class="nav bd-grid">
+        <div>
+          <div class="logo-container">
+             <a class="tomtech" href="#"><span>T</span>eme<span>s</span>gen</a>
+
+          </div>
+        </div>
+        <div class="nav-top">
+          <ul class="nav-list nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active-link show-link"
+                ><span>Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link show-link"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link show-link"
+                ><span>Services</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link show-link"
+                ><span>Skills</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link show-link"
+                ><span>Projects</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link show-link"
+                ><span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="theme">
+          <span class="dark"> </span>
+        </div>
+        <div class="nav-toggle" id="navtoggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        
+        
+        <div class="home-data">
+          <h1 class="home-title">
+            Hi,<br />I'am <span class="home-title-color">Temesgen</span><br />
+            Web Developer
+          </h1>
+          <div class="buttons">
+            <a href="#" id="btn1" class="button contact-btn">Contact</a>
+            <a href="#" id="btn2" class="button">Hire me</a>
+          </div>
+        </div>
+
+        <div class="hidden contact-me">
+          <div class="home-contact">
+            <h2 class="section-title">Contact</h2>
+            <button class="close">X</button>
+
+            <div class="contact__container bd-grid">
+              <form action="mailto:tommr2323@gmail.com" class="contact__frm">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="contact__inpt"
+                  required
+                />
+                <input
+                  type="mail"
+                  placeholder="Email"
+                  class="contact__inpt"
+                  required
+                />
+                <input
+                  type="number"
+                  placeholder="phone Number"
+                  class="contact__inut"
+                  required
+                />
+
+                <textarea
+                  name=""
+                  id=""
+                  cols="0"
+                  rows="10"
+                  class="contat__input"
+                  placeholder="Leave message ...."
+                  required
+                ></textarea>
+                <input
+                  type="button"
+                  value="Send Message"
+                  class="contact__button send"
+                  style="font-size: 15px"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="media-link">
+          <a href="" class="media-icon">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="" class="media-icon">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="" class="media-icon">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="" class="media-icon">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+
+        <div class="home-img">
+          
+          <img src="assets/img/ab.png" alt="" />
+        </div>
+
+        
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <p class="qoute-conatiner">
+          <!-- Why do programmers prefer dark mode? Because light attracts bugs. -->
+        </p>
+        <h1 class="big-h1">About</h1>
+        <h2 class="section-title shadow">About Me</h2>
+        
+        <div class="about-container bd-rid">
+          <div class="about-img">
+            <img src="assets/img/ab.png" alt="" />
+          </div>
+          <div class="main-content">
+            <button class="about-modal intro" data-target="about-intro">
+              My Hobby
+            </button>
+
+            <div class="about-modal-content about-intro hidden">
+              <p class="intro-1">
+                i'm web developer and graphics designer from Ethiopia
+              </p>
+              <p class="intro-2">
+                i enjoy taking complex problems and make them easy and simple. i
+                love logic and data structure those make the backend so easy
+              </p>
+              <p class="intro-3">
+                when i am not coding or staring at pc , you'll find me reading
+                fiction or having time with my friends or family
+              </p>
+            </div>
+            <button class="about-modal me" data-target="about-me">About Me</button>
+
+            <div class="about-modal-content about-me hidden">
+              <h4 class="name">I'm freelancer</h4>
+              <table>
+                <tr>
+                  <th>Name</th>
+                  &nbsp;
+                  <td>Temesgen Marie</td>
+                </tr>
+                <tr>
+                  <th>Address</th>
+                  &nbsp;
+                  <td>Bahir dar, Ethiopia</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  &nbsp;
+                  <td>tommr2323@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>Phone</th>
+                  &nbsp;
+                  <td>+251930412394</td>
+                </tr>
+              </table>
+            </div>
+            <button class="about-modal hobby" data-target="about-hobby">
+              My Hobby
+            </button>
+
+            <div class="about-modal-content about-hobby hidden">
+              <div class="hobby">
+                <div>
+                  <img src="/assets/img/stone.jpg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/img/stone.jpg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/img/stone.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <button class="about-modal" data-target="about-me">
+              Expertise
+            </button>
+            <div class="about-hobby item">
+              <div class="hobby">
+                <div>
+                  <img src="/assets/img/stone.jpg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/img/stone.jpg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/img/stone.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="about-button">
+              <a href="" class="about-btn button">Read More</a>
+              <a href="" class="about-btn button">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- services section -->
+<section id="services">
+	<div class="container text-center text-dark">
+       
+ 			 <h1 class="big-h1">
+				What Do I Do ?
+			 </h1>
+       <h2 class="section-title shadow">
+				What Do I Do ?
+			 </h2>
+ 		   <div class="col-12 text-center description">
+			 <p>
+         I offer u simple easy and efficient services for u 
+ 			 </p>
+		  </div>
+	     <div class="service">
+        <div>
+          <img src="/assets/img/graphic-designer.png" alt="" width="350px">
+
+        </div>
+        
+ 	</div>
+</section>
+
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h1 class="big-h1">Skills</h1>
+        <h2 class="section-title shadow">Skills</h2>
+        <br><br>
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+              optio id vero amet, alias architecto consectetur error eum eaque
+              sit.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="assets/img/ab.png" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h1 class=" big-h1">Works</h1>
+
+        <h2 class="section-title shadow">Work</h2>
+
+        <div class="work__container bd-grid">
+          <div href="" class="work__img">
+            <img src="assets/img/drum.jpeg" alt="" />
+            <div class="work-btn">
+              <a href="">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+            <div class="work-btn">
+              <a href="">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+            <div class="work-btn">
+              <a href="">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+            <div class="work-btn">
+              <a href="">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+            <div class="work-btn">
+              <a href="">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+            <div class="work-btn">
+              <a href="">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- freelance section -->
+      <section
+        class="freelnace">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>I'm <span>Available</span> for freelancing</h2>
+              <p>
+                The passionate who live in the far bahir dar , Ethiopia simple
+                --- easy --- ontime development
+              </p>
+              <a href="#" class="button-f">Hire me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h1 class=" big-h1">Contact</h1>
+
+        <h2 class="section-title shadow">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="mailto:tommr2323@gmail.com" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <input
+              type="number"
+              placeholder="phone Number"
+              class="contact__input"
+            />
+
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+              placeholder="Leave message ...."
+            ></textarea>
+            <input
+              type="button"
+              value="Send Message"
+              class="contact__button"
+              style="font-size: 15px"
+            />
+          </form>
+          <img src="/assets/img/ab.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+
+    <footer class="footer">
+      <p class="footer__title">Temesgen Marie</p>
+      <div class="row">
+        <div class="item">
+          <div class="content">
+            <h2 class="heading">
+              <p>
+                <i
+                  class="bx bxs-user"
+                  style="font-size: 25px; color: rgb(79, 78, 78)"
+                ></i>
+              </p>
+              About
+            </h2>
+            <p>passionated web developer from Ethiopia</p>
+            <ul
+              class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
+            >
+              <li class="ftco-animate">
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item" style="margin-top: 90px">
+          <div class="content">
+            <h2 class="heading">
+              <p>
+                <i
+                  class="bx bx-link-alt"
+                  style="font-size: 25px; color: rgb(79, 78, 78)"
+                ></i>
+              </p>
+              Links
+            </h2>
+            <ul style="list-style: none">
+              <li>
+                <i class="bx bxs-home-alt-2"></i>&nbsp;&nbsp;
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Home</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-user"></i>&nbsp;&nbsp;
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>About</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-ghost"></i>&nbsp;&nbsp;
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>skills</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-briefcase"></i>&nbsp;&nbsp;
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Services</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-find"></i> &nbsp;&nbsp;
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Projects</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-message-dots"></i>&nbsp;&nbsp;
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <p>
+              <i
+                class="bx bxs-mobile"
+                style="font-size: 25px; color: rgb(79, 78, 78)"
+              ></i>
+            </p>
+
+            <h2 class="heading">Services</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Web Design</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Web
+                  Development</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon-long-arrow-right mr-2"></span>Graphic
+                  Design</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <h2 class="heading">
+              <img
+                src="/content/icon/question.png"
+                alt=""
+                width="30px"
+                height="30px"
+              />
+              Have a Questions ?
+            </h2>
+            <div class=" ">
+              <ul>
+                <li>
+                  <i class="bx bxs-map"></i>
+                  <span class="icon icon-map-marker"></span
+                  ><span class="text">bahir dar , Ethiopia</span>
+                </li>
+                <li>
+                  <i class="bx bx-phone"></i>
+                  <a href="#"
+                    ><span class="icon icon-phone"></span
+                    ><span class="text">+251992327207</span></a
+                  >
+                </li>
+                <li>
+                  <i class="bx bxs-envelope"></i>
+                  <a href="#"
+                    ><span class="icon icon-envelope"></span
+                    ><span class="text">tommr2323@gmail.com</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="col-md-12 text-center">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> bytom
+          </p>
+        </div>
+      </div>
+    </footer>
+
+<!-- scroll up -->
+ <div class="scroll">
+  <a href="">^</a>
+ </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/about.js"></script>
+    <script src="/assets/js/quote.js"></script>
+  </body>
+</html>
