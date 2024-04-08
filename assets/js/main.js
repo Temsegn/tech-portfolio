@@ -72,31 +72,7 @@ navLinks.forEach((link) => {
    });
 });
 
-// const aboutModalButtons = document.querySelectorAll(".about-modal");
-
-// aboutModalButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     const clickedTarget = button.dataset.target;
-
-//     aboutModalButtons.forEach((otherButton) => {
-//       if (otherButton !== button) {
-//         // Not active modal target
-//         otherButton.classList.toggle("hidden"); // Hide other buttons
-//       }
-//     });
-
-//     const targetContent = document.querySelector(`.about-modal-content[data-target="${clickedTarget}"]`);
-//     targetContent.classList.remove("hidden");
-//   });
-// });
-
-const one=document.querySelector(".about-intro");
-const two=document.querySelector(".about-me");
-const three=document.querySelector(".about-hobby");
-const intro=document.querySelector(".intro");
-const me=document.querySelector(".me");
-const hobby=document.querySelector(".hobby");
-
+ 
 //contatc me
 
 const contact = document.querySelector(".contact-btn");
@@ -125,3 +101,48 @@ send.addEventListener('click',()=>{
                 <button class="close">X</button>
 
  */
+
+
+
+                
+// const buttons = document.querySelectorAll(".about-modal");
+
+// buttons.forEach( (button)=> {
+//   button.addEventListener("click", ()=>{
+
+//     const targetId = button.dataset.target; 
+    
+// buttons.forEach((otherButton) => {
+//   if (otherButton !== button) {
+//     // Not active modal target
+//     otherButton.classList.toggle("hidden"); // Hide other buttons
+//   }
+// });
+//     console.log(targetId)// Get the target ID from data-target attribute
+//     const targetContent = document.querySelector(`.${targetId}`);
+
+//     // Toggle visibility of the target modal content
+//     targetContent.classList.remove("hidden");
+//   });
+// });
+
+const b=document.querySelector('.ab');
+const b2=document.querySelector('.ad');
+const b3=document.querySelector('.ag');
+const b4=document.querySelector('.ah');
+
+const doc2=document.querySelector('.af');
+
+const doc=document.querySelector('.ac');
+
+b.addEventListener('click',()=>{
+    doc.classList.toggle('hidden'); 
+    b2.classList.toggle('hidden');
+    
+})
+
+b2.addEventListener('click',()=>{
+  doc2.classList.toggle('hidden'); 
+  b.classList.toggle('hidden');
+
+})

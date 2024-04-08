@@ -1,6 +1,6 @@
 
 body.active{
-    background-color: rgb(254, 254, 254);
+    background-color: rgba(113, 157, 191, 0.057);
     color:black;
   
   }
@@ -14,7 +14,7 @@ body.active{
     box-shadow: 4px -4px -4px black;
     }
   body.active .nav-list .nav-item a{
-    color: orangered;
+    color: rgb(69, 63, 63);
   }
   body.active .nav-toggle
   {
@@ -22,7 +22,7 @@ body.active{
   }
   body.active .tomtech
   {
-    color: var(--first-colors);
+    color: rgb(69, 63, 63);
   }
   body.active .button{
      border: 2px solid rgb(225, 225, 225);
