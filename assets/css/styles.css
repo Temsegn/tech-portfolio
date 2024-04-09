@@ -12,8 +12,6 @@
   --second-color: hsl(224, 56%, 12%);
 }
 
-
-
 /* basic*/
 
 * {
@@ -113,11 +111,13 @@ img {
   left: 0;
   padding: 0;
   z-index: 101;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   color: white;
 }
 
 /*===== NAV =====*/
+
+
 .nav {
   width: 100%;
   height: 4rem;
@@ -133,7 +133,7 @@ img {
   font-size: 30px;
   font-weight: 1000;
   font-family: "roboto";
-  text-shadow: 2px 3px 1px rgb(6, 6, 6);
+  /* text-shadow: 2px 3px 1px rgb(255, 255, 255); */
 }
 .tomtech span {
   font-family: "Tangerine";
@@ -141,7 +141,7 @@ img {
    font-size: 60px;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 912px) {
   .nav-toggle {
     display: block;
     cursor: pointer;
@@ -165,9 +165,7 @@ img {
 
     transition: all ease-in-out 0.3s;
   }
-  .nav-item.show {
-    display: block;
-  }
+   
 
   .nav-toggle.active .bar:nth-child(2) {
     opacity: 0;
@@ -185,6 +183,10 @@ img {
     bottom: 0;
     left: 0;
     background-color: #060505dc;
+  }
+  .nav-menu.active .nav-item
+  {
+       display: block;
   }
   .nav {
     position: fixed;
@@ -270,18 +272,7 @@ img {
   border-radius: 5px;
 }
 
-/* show each element */
-
-/*Active menu*/
-.active-link::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
+ 
 
 /*   HOME   */
 
@@ -289,8 +280,7 @@ img {
   position: relative;
   width: 100%;
   row-gap: 3rem;
-  box-shadow: 0px 5px 0px rgb(27, 25, 25);
-}
+ }
 
 .home-data {
   margin-top: 30px;
@@ -411,32 +401,15 @@ img {
    color: #686868;
 }
 
-
-/* ===== ABOUT =====*/
-
-
-/* services style===== */
-
-
-#services {
-  padding-top: 100px;
-  text-align: center;
-}
-#services .description {
-  text-align: center;
-  max-width: 100%;
-  font-size: 20px;
-  padding: 1px;
-}
- 
- 
- 
-.service
+.home .qoute-conatiner
 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
- }
+   position: absolute;
+   color: #b77b46;
+   z-index: 100;
+   bottom: -10%;
+  
+}
+
  
 /* ===== SKILLS =====*/
 .skills__container {
@@ -487,8 +460,13 @@ img {
 .skills__js {
   width: 65%;
 }
+
 .skills__ux {
   width: 85%;
+}
+
+.skills__react {
+  width: 50%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -502,41 +480,66 @@ img {
     rgba(5, 7, 14, 0.945) 0px 18px 36px -18px inset; */
 }
 .work__img {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: rgba(36, 34, 34, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  border-radius: 0.5rem;
   overflow: hidden;
   display: block;
  }
  .work-btn 
  {
-   display: flex;
+    display: flex;
     gap: 1rem;
-    margin-top: 10px;
+    margin:17px 10px;
     justify-content: center;
+  
   }
  .work-btn  a
  {
-  background-color: #c36a05;
-   border-radius: 6px;
+  background-color: #fd8e10c0;
+   border-radius: 10px;
    border:1px solid white;
-   padding: .1rem 3rem;
+   padding: 0.4rem 3rem;
    transition: all ease-in-out .4s;
 }
 .work-btn  a:hover
  {
-  background-color: #f0a44d;
-   border-radius: 6px;
-   border:1px solid white;
-   padding: .2rem 1.2rem;
+  background-color: #d88321;
+  border-radius: 10px;
+  padding: .3rem 2rem;
+   color: black;
 }
 .work__img img {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
   width: 100%;
   height: 300px;
+  border-radius: 10px;
   transition: 1s;
 }
 .work__img img:hover {
   transform: scale(1.1);
 }
+
+.work__img .work-overlay
+{ 
+   position: absolute;
+   top: 100%;
+   font-size: 25px;
+   font-weight: bolder;
+    color: white;
+   background-color: #000000a3;
+   width: 100%;
+   height: 81%;
+   text-align: center;
+   padding-top: 40%;
+   transition: all ease-in-out .8s;
+   z-index: 10;
+}
+ .work__img:hover .work-overlay
+{
+  /* position: absolute; */
+   top:0;
+}
+
 /* freelance  */
 
 .container {
@@ -637,8 +640,9 @@ img {
 
 .contact__input {
   width: 100%;
-  font-size: var(--normal-font-size);
+   font-size: var(--normal-font-size);
   font-weight: 600;
+  border: 1px solid white;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1.5px solid var(--second-color);
@@ -820,7 +824,7 @@ a:hover {
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 912px) {
   body {
     margin: 0;
   }

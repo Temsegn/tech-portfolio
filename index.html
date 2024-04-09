@@ -56,7 +56,7 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link show-link"
+              <a href="#work" class="nav-link show-link"
                 ><span>Projects</span></a
               >
             </li>
@@ -158,15 +158,16 @@
           
           <img src="assets/img/ab.png" alt="" />
         </div>
-
+        <div>
+          <p class="qoute-conatiner">
+          </p>
+        </div> 
         
       </section>
 
       <!--===== ABOUT =====-->
       <section class="about section" id="about">
-        <p class="qoute-conatiner">
-          <!-- Why do programmers prefer dark mode? Because light attracts bugs. -->
-        </p>
+        
         <h1 class="big-h1">About</h1>
         <h2 class="section-title shadow">About Me</h2>
         
@@ -175,11 +176,12 @@
             <img src="assets/img/ab.png" alt="" />
           </div>
           <div class="main-content">
-            <button class="about-modal intro" data-target="about-intro">
-              My Hobby
+            <button class="about-modal ab-btn" data-target="about-intro">
+              ABOUT ME
             </button>
+            <button class="about-modal cf-btn" data-target="about-me">Contact Info</button>
 
-            <div class="about-modal-content about-intro hidden">
+            <div class="hidden about" >
               <p class="intro-1">
                 i'm web developer and graphics designer from Ethiopia
               </p>
@@ -192,9 +194,8 @@
                 fiction or having time with my friends or family
               </p>
             </div>
-            <button class="about-modal me" data-target="about-me">About Me</button>
 
-            <div class="about-modal-content about-me hidden">
+            <div class="hidden cont">
               <h4 class="name">I'm freelancer</h4>
               <table>
                 <tr>
@@ -219,71 +220,14 @@
                 </tr>
               </table>
             </div>
-            <button class="about-modal hobby" data-target="about-hobby">
-              My Hobby
-            </button>
-
-            <div class="about-modal-content about-hobby hidden">
-              <div class="hobby">
-                <div>
-                  <img src="/assets/img/stone.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="/assets/img/stone.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="/assets/img/stone.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <button class="about-modal" data-target="about-me">
-              Expertise
-            </button>
-            <div class="about-hobby item">
-              <div class="hobby">
-                <div>
-                  <img src="/assets/img/stone.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="/assets/img/stone.jpg" alt="" />
-                </div>
-                <div>
-                  <img src="/assets/img/stone.jpg" alt="" />
-                </div>
-              </div>
-            </div>
+             
             <div class="about-button">
-              <a href="" class="about-btn button">Read More</a>
-              <a href="" class="about-btn button">Download CV</a>
+              <a href="" class="about-btn">Read More</a>
+              <a href="" class="about-btn">Download CV</a>
             </div>
           </div>
         </div>
       </section>
-<!-- services section -->
-<section id="services">
-	<div class="container text-center text-dark">
-       
- 			 <h1 class="big-h1">
-				What Do I Do ?
-			 </h1>
-       <h2 class="section-title shadow">
-				What Do I Do ?
-			 </h2>
- 		   <div class="col-12 text-center description">
-			 <p>
-         I offer u simple easy and efficient services for u 
- 			 </p>
-		  </div>
-	     <div class="service">
-        <div>
-          <img src="/assets/img/graphic-designer.png" alt="" width="350px">
-
-        </div>
-        
- 	</div>
-</section>
-
-
       <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
         <h1 class="big-h1">Skills</h1>
@@ -293,9 +237,7 @@
           <div>
             <h2 class="skills__subtitle">Profesional Skills</h2>
             <p class="skills__text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              optio id vero amet, alias architecto consectetur error eum eaque
-              sit.
+              I have strong foundation on this skill and I can capable of doing very interesting website 
             </p>
             <div class="skills__data">
               <div class="skills__names">
@@ -329,6 +271,16 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
+                <i class='bx bxl-react skills__icon'></i>
+                <span class="skills__name ">REACT</span>
+              </div>
+              <div class="skills__bar skills__react"></div>
+              <div>
+                <span class="skills__percentage">60%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
                 <i class="bx bxs-paint skills__icon"></i>
                 <span class="skills__name">UX/UI</span>
               </div>
@@ -351,45 +303,71 @@
         <h2 class="section-title shadow">Work</h2>
 
         <div class="work__container bd-grid">
+          
           <div href="" class="work__img">
-            <img src="assets/img/drum.jpeg" alt="" />
+             
+             <div class="work-overlay">
+               Simple Project
+               <sm>click</sm>
+             </div>
+            <img src="assets/img/simple-project.jpg" alt="" />
+            <div class="work-btn">
+              <a href="/content/simple-project/index.html">View</a>
+              <a href="">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            
+            <div class="work-overlay">
+              Portfolio Project
+            </div>
+            <img src="assets/img/portfolio.png" alt="" />
             <div class="work-btn">
               <a href="">View</a>
               <a href="">Code</a>
             </div>
           </div>
           <div href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
+            
+            <div class="work-overlay">
+              Dashboard Project
+            </div>
+            <img src="assets/img/dashboard5.png" alt="" />
             <div class="work-btn">
-              <a href="">View</a>
+              <a href="/project/dashBoard-tom/landingpage/index.html">View</a>
               <a href="">Code</a>
             </div>
           </div>
           <div href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
+            
+            <div class="work-overlay">
+              TAM-TECH Project
+            </div>
+            <img src="assets/img/tamtech-2.jpeg" alt="" />
             <div class="work-btn">
-              <a href="">View</a>
+              <a href="/project/TAM-TECH/html/index.html">View</a>
+              <a href="https://github.com/Temsegn/tom-port">Code</a>
+            </div>
+          </div>
+          <div href="" class="work__img">
+            
+            <div class="work-overlay">
+              Tindog Project
+            </div>
+            <img src="assets/img/tindog-4.png" alt="" />
+            <div class="work-btn">
+              <a href="/project/Tindog/tindog.html">View</a>
               <a href="">Code</a>
             </div>
           </div>
           <div href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-            <div class="work-btn">
-              <a href="">View</a>
-              <a href="">Code</a>
+            
+            <div class="work-overlay">
+              Personal website
             </div>
-          </div>
-          <div href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
+            <img src="assets/img/tom-2.jpeg" alt="" />
             <div class="work-btn">
-              <a href="">View</a>
-              <a href="">Code</a>
-            </div>
-          </div>
-          <div href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-            <div class="work-btn">
-              <a href="">View</a>
+              <a href="/project/tom-portfolio/index.html">View</a>
               <a href="">Code</a>
             </div>
           </div>
@@ -403,8 +381,10 @@
             <div class="col">
               <h2>I'm <span>Available</span> for freelancing</h2>
               <p>
-                The passionate who live in the far bahir dar , Ethiopia simple
-                --- easy --- ontime development
+                The passionate one who live in the far bahir dar , Ethiopia
+              </p>
+              <p>
+                simple--- easy --- on-time development
               </p>
               <a href="#" class="button-f">Hire me</a>
             </div>
@@ -418,7 +398,7 @@
         <h2 class="section-title shadow">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="mailto:tommr2323@gmail.com" class="contact__form">
+          <form action="mailto:tommr2323@gmail.com" class="contact__form" >
             <input type="text" placeholder="Name" class="contact__input" />
             <input type="mail" placeholder="Email" class="contact__input" />
             <input
@@ -450,6 +430,7 @@
     <!--===== FOOTER =====-->
 
     <footer class="footer">
+      
       <p class="footer__title">Temesgen Marie</p>
       <div class="row">
         <div class="item">

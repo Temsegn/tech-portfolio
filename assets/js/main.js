@@ -5,14 +5,28 @@ const body = document.querySelector("body");
 const menu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-item");
 
+const contact = document.querySelector(".contact-btn");
+const overlay = document.querySelector(".overlay");
+const homeContact = document.querySelector(".contact-me");
+const close = document.querySelector(".close");
+const send = document.querySelector(".send");
+
+
+const aboutMe = document.querySelector(".ab-btn");
+const aboutContact = document.querySelector(".cf-btn");
+const aboutMeDoc = document.querySelector(".about");
+const doc = document.querySelector(".cont");
+
 const theme = document.querySelector(".theme");
+const sections = document.querySelectorAll("section[id]");
+
+
 theme.addEventListener("click", () => {
   theme.classList.toggle("active");
   body.classList.toggle("active");
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
   const scrollDown = window.scrollY;
@@ -68,60 +82,35 @@ navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     toggler.classList.remove("active");
     menu.classList.remove("active");
-
-   });
+  });
 });
-
-// const aboutModalButtons = document.querySelectorAll(".about-modal");
-
-// aboutModalButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     const clickedTarget = button.dataset.target;
-
-//     aboutModalButtons.forEach((otherButton) => {
-//       if (otherButton !== button) {
-//         // Not active modal target
-//         otherButton.classList.toggle("hidden"); // Hide other buttons
-//       }
-//     });
-
-//     const targetContent = document.querySelector(`.about-modal-content[data-target="${clickedTarget}"]`);
-//     targetContent.classList.remove("hidden");
-//   });
-// });
-
-const one=document.querySelector(".about-intro");
-const two=document.querySelector(".about-me");
-const three=document.querySelector(".about-hobby");
-const intro=document.querySelector(".intro");
-const me=document.querySelector(".me");
-const hobby=document.querySelector(".hobby");
 
 //contatc me
 
-const contact = document.querySelector(".contact-btn");
-const overlay = document.querySelector(".overlay");
-const homeContact = document.querySelector(".contact-me");
-const close = document.querySelector(".close");
-const send = document.querySelector(".send");
 contact.addEventListener("click", () => {
   homeContact.classList.remove("hidden");
   overlay.classList.add("overlays");
 });
 
-close.addEventListener('click',()=>{
+close.addEventListener("click", () => {
   homeContact.classList.add("hidden");
   overlay.classList.remove("overlays");
-})
+});
 
-send.addEventListener('click',()=>{
+send.addEventListener("click", () => {
   homeContact.classList.add("hidden");
   overlay.classList.remove("overlays");
-})
+});
 
 
-/**
- 
-                <button class="close">X</button>
 
- */
+
+aboutMe.addEventListener("click", () => {
+  aboutMeDoc.classList.toggle("hidden");
+  aboutContact.classList.toggle("hidden");
+});
+
+aboutContact.addEventListener("click", () => {
+  doc2.classList.toggle("hidden");
+  b.classList.toggle("hidden");
+});
